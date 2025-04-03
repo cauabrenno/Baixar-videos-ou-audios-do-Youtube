@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixador de Vídeos do YouTube</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Baixar Vídeo ou Áudio do YouTube</h1>
+        <form id="downloadForm">
+            <input type="text" id="url" name="url" placeholder="Cole o link do vídeo aqui" required>
+        
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="download_type" value="video" checked> Vídeo
+                </label>
+                <label class="audio-option">
+                    <input type="radio" name="download_type" value="audio"> Áudio
+                </label>
+            </div>
+
+            <div class="creditos">
+                <h5>Cauã Brenno</h5>
+            </div>
+        
+            <button type="submit">Baixar</button>
+        </form>
+        
+    </div>
+</body>
+</html>
