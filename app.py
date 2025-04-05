@@ -19,7 +19,7 @@ def on_progress(stream, chunk, bytes_remaining):
     total_size = stream.filesize
     bytes_downloaded = total_size - bytes_remaining
     progresso = int((bytes_downloaded / total_size) * 100)
-print(f"\rProgresso: {progresso}%", end="")
+    print(f"\rProgresso: {progresso}%", end="")
 
 
 # interface web do Index.html
